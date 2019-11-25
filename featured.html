@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rooom</title>
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            About
+          </a>
+
+          <a class="navbar-item">
+            Shop
+          </a>
+        </div>
+
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./">
+            <img src="img/logo.png" height="30">
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item">
+            Account
+          </a>
+
+          <a class="navbar-item">
+            Cart (0)
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro -->
+    <section class="featured-hero hero is-medium is-dark">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <h1 class="title is-1 is-spaced has-text-weight-normal">
+                Featured Products
+              </h1>
+              <p class="is-size-6 has-text-grey-light subtitle" id="featuredProdNum"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <main class="featured-products section">
+      <div class="container">
+        <div class="columns is-multiline" id="products-container">
+          <!-- Product -->
+          <div class="column is-one-third-tablet is-one-quarter-widescreen">
+            <div class="card">
+              <!-- Image -->
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <img src="img/marble-cabinet.jpeg" alt="Placeholder">
+                </figure>
+              </div>
+              <!-- Information -->
+              <div class="card-content">
+                <div class="is-pulled-left">
+                  <h2 class="title is-6">
+                    Product name
+                  </h2>
+                  <p class="subtitle is-size-6">Product Brand</p>
+                </div>
+                <div class="is-pulled-right">
+                  <p>$0.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer has-text-centered has-background-dark has-text-light">
+      <div class="container">
+         <div class="columns is-vcentered">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <p>
+              <small>
+                &copy; Rooom. Website by Jasmine Vout.
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Populate page with JSON data -->
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>

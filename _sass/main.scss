@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// ## VARIABLES
+// # Initial
+
+// # Derived
+$family-secondary: "Alata", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// ## Import the rest of Bulma
+@import "../node_modules/bulma/bulma";
+
+// Responsive Variables
+$tablet: 769px;
+$desktop: 1024px;
+$widescreen: 1216px;
+$fullhd: 1408px;
+
+// ## GLOBAL
+// # Typography
+h1,
+h2,
+h3 {
+  font-family: $family-secondary;
+}
+
+figure.image {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// # Anchors & Links
+a {
+  transition: 0.3s;
+}
+
+// ## INDEX
+.index-featured,
+.index-furniture,
+.index-homewares,
+.index-art {
+  .product-1,
+  .product-2,
+  .product-3 {
+    padding: 0.75rem 0;
+
+    @media only screen and (min-width: $tablet) {
+      padding: 0.5rem;
+    }
+
+    figure {
+      padding-top: 60%;
+      overflow: hidden;
+
+      @media only screen and (min-width: $tablet) {
+        padding-top: auto;
+      }
+    }
+
+    img {
+      transition: 0.3s;
+    }
+    img:hover,
+    img:active,
+    img:focus {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// # Featured Products
+.index-featured {
+  .product-2 {
+    @media only screen and (min-width: $tablet) {
+      width: 60%;
+      margin-left: auto;
+    }
+  }
+}
+
+// # Furniture
+.index-furniture {
+  .product-1 {
+    @media only screen and (min-width: $tablet) {
+      width: 90%;
+      margin-left: auto;
+    }
+  }
+  .product-3 {
+    @media only screen and (min-width: $tablet) {
+      width: 70%;
+    }
+  }
+}
+
+// # Homewares
+.index-homewares {
+  .product-1 {
+    @media only screen and (min-width: $tablet) {
+      width: 70%;
+      margin-left: auto;
+    }
+  }
+}
+
+// # Art
+.index-art {
+  .product-1 {
+    @media only screen and (min-width: $tablet) {
+      width: 90%;
+      margin-left: auto;
+    }
+  }
+  .product-3 {
+    @media only screen and (min-width: $tablet) {
+      width: 60%;
+    }
+  }
+}
+
+
+// ## FEATURED
+.featured-products {
+  .card-image {
+    overflow: hidden;
+    img {
+      transition: 0.3s;
+    }
+    img:hover,
+    img:active,
+    img:focus {
+      transform: scale(1.1);
+    }
+  }
+  .card-content {
+    height: 90px;
+  }
+}
